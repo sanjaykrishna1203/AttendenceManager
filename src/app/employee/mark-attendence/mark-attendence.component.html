@@ -1,0 +1,11 @@
+<div class = "text-center">
+
+    <h1>Mark Your Attendence</h1>
+    <br><br><br>
+   <h3 >
+    The time now is
+      <span>  {{date   | date: "MMM d, y, h:mm:ss a"}}</span>
+   </h3> 
+
+   <button class="btn btn-primary" (click)="markAttendence()" type="submit"> Mark Attendence</button>
+</div>

@@ -1,0 +1,42 @@
+
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Attendence Manager</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="color: white !important;" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active mx-2">
+                    <a class="nav-link active" aria-current="page" routerLink="/addEmployee">Add Employee</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" routerLink="/viewAttendence">View Attendence</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h1 class="text-center">Employee Attendence Report</h1>
+<br>
+
+<div class="d-flex justify-content-center align-items-middle">
+<div class="col-8">
+
+    <div *ngFor="let d of httpService.dates">
+        <h4 class="text-center">{{d}}</h4>
+        <table style="width: 100%;">
+            <tr>
+                <th>Email</th>
+                <th>Time</th>
+            </tr>
+            <tr *ngFor="let val of httpService.attendenceData[d]">
+            <td>{{val.email}}</td>
+            <td>{{val.time}}</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+</div>
+</div>

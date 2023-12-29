@@ -1,0 +1,47 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Attendence Manager</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="color: white !important;" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active mx-2">
+                    <a class="nav-link active" aria-current="page" routerLink="/addEmployee">Add Employee</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" routerLink="/viewAttendance">View Attendence</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1 class="text-center">Add Employee</h1>
+<br>
+<div class="d-flex justify-content-center align-items-middle ">
+    <div class="col-6 border border-dark rounded">
+        <div class="p-3">
+            <div>
+                <label for="eName" class="form-label">Employee Name</label>
+                <input type="text" [(ngModel)]="eName" class="form-control" id="ename" placeholder="">
+            </div>
+            <div>
+                <label for="eEmail" class="form-label">Employee Email</label>
+                <input type="email" [(ngModel)]="eEmail" class="form-control" id="eemail" placeholder="">
+            </div>
+            <div>
+                <label for="epwd" class="form-label">Employee Password</label>
+                <input type="text" [(ngModel)]="ePassword" class="form-control" id="epwd" placeholder="Set a strong password">
+            </div>
+            <div>
+                <label for="mgr" class="form-label">Manager Email</label>
+                <input type="text" [(ngModel)]=httpService.userEmail disabled class="form-control" id="mgr" placeholder="">
+            </div>
+            <div class="text-center m-3">
+                <button (click)="addEmployee()" type="submit" class="btn btn-primary">Add Employee</button>
+            </div>
+        </div>
+    </div>
+</div>

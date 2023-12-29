@@ -1,0 +1,64 @@
+{
+    "Users": [
+        {
+            "name": "Sanjay",
+            "email": "sk@gmail.com",
+            "password": "1234"
+        },
+        {
+            "name": "venkat",
+            "email": "vv@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "Employees": [
+        {
+            "name": "Sanjay",
+            "email": "e1@gmail.com",
+            "password": "1234",
+            "manager": "sk@gmail.com"
+        },
+        {
+            "name": "venkat",
+            "email": "e2@gmail.com",
+            "password": "1234",
+            "manager": "sk@gmail.com"
+        },
+        {
+            "name": "Kennedy Burch",
+            "email": "suvanu@mailinator.com",
+            "password": "Provident incidunt",
+            "manager": "sk@gmail.com"
+        }
+    ],
+    "Attendances": {
+        "25-12-2023": [
+            {
+                "email": "e1@e.com",
+                "time": "12:55"
+            },
+            {
+                "email": "e2@e.com",
+                "time": "12:55"
+            },
+            {
+                "email": "e1@gmail.com",
+                "time": "18:50"
+            },
+            {
+                "email": "e1@gmail.com",
+                "time": "19:28"
+            }
+        ],
+        "26-12-2023": [
+            {
+                "email": "e1@e.com",
+                "time": "12:55"
+            },
+            {
+                "email": "e2@e.com",
+                "time": "12:55"
+            }
+        ]
+    }
+}
